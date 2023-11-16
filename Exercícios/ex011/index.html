@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--Esta é a maneira simples de carregar áudio-->
+    <audio src="midia/Gully Dreams - Hanu Dixit.mp3" controls autoplay></audio>
+    <!--Quando ocorrer de o navegador não reproduzir determinado formato, podemos utilizar o código abaixo para reproduzir o mesmo aúdio em formato diferente.-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Gully Dreams - Hanu Dix
+        it.mp3" type="audio/mpeg">
+        <source src="midia/Gully Dreams - Hanu Dixit.ogg" type="audio/ogg">
+        <source src="midia/Gully Dreams - Hanu Dixit.wav" type="audio/wav"> 
+        <p>Infelismente não foi possível reproduzir o áudio. Verifique se o seu navegador suporta as extensões .mp3, .ogg e .wav. <a href="midia/Gully Dreams - Hanu Dixit.mp3">Clique aqui</a> para baixar o arquivo.</p>
+    </audio>
+</body>
+</html>
